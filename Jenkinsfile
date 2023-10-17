@@ -18,7 +18,7 @@ pipeline{
       steps{
         dir("tpspring"){
           sh "mvn clean install"
-          sh "docker build -t tpspring ."
+          sh "sudo docker build -t tpspring ."
         }
       }
     }
