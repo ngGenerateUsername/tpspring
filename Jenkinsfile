@@ -24,7 +24,7 @@ pipeline{
     }
     stage ("Run docker compose"){
       steps{
-        dir("exp-spring"){
+        dir("tpspring"){
           sh "docker-compose up -d"
         }
       }
